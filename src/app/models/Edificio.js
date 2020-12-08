@@ -5,11 +5,10 @@ class Edificio extends Model {
     super.init(
       {
         nome: DataTypes.STRING,
-        imagem: DataTypes.STRING,
+        categoria_id: DataTypes.INTEGER,
         latitude: DataTypes.STRING,
         longitude: DataTypes.STRING,
-        longitude: DataTypes.STRING,
-        descricao: DataTypes.STRING
+        descricao: DataTypes.STRING,
       },
       {
         sequelize
