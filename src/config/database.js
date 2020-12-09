@@ -1,5 +1,4 @@
-/*
-//DATABASE PRINCIPAL SERVER--
+//DATABASE PRINCIPAL SERVER
   module.exports = {
     username: "rpvfiltcquscjb",
     password: "8b19fc10d90ace6d562c992636fa862e9bde6ec63ead84f3368a8c82f63dd613",
@@ -10,10 +9,11 @@
       timestamps: true,
       underscored: true
     }
-  };*/
-  
+  };
 
-//DATABASE DEVELOPMENT
+
+/*
+//DATABASE LOCAL
   module.exports = {
     username: "postgres",
     password: "postgrespass",
@@ -24,6 +24,6 @@
       timestamps: true,
       underscored: true
     }
-  };
+  };*/
   
   

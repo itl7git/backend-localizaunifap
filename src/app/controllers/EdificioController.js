@@ -2,13 +2,17 @@ const Edificio = require("../models/Edificio");
 const Sequelize = require("sequelize");
 module.exports = {
   async index(req, res) {
+
+    /* 
+    Consulta usando o ILike
+
     const { nome } = req.headers;
     console.log("hos");
     const Op = Sequelize.Op; // biblioteca de operadores
-    var query = `${nome}%`; // string de consulta
+    var query = `${nome}%`; // string de consulta*/
 
     const edificio = await Edificio.findAll({
-      where: { nome: { [Op.iLike]: query } }
+      //where: { nome: { [Op.iLike]: query } }
     });
 
     return res.json(edificio);
